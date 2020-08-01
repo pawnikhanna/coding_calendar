@@ -20,9 +20,9 @@ const events = async() => {
       case "past" :
         console.log ('PAST EVENTS');
         result.forEach(function(elem) {
-          let start = elem.start;
-          start = new Date(start);
-          if (start < currDate) {
+          let end = elem.end;
+          end = new Date(end);
+          if (end < currDate) {
             console.log(elem);
         }
         })
